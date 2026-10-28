@@ -485,6 +485,12 @@ export const GENERATED = {
 		{ key: "video-test_0b02adc4.mp4", srcContains: "video-test_0b02adc4.mp4", layer: 'page', expectedSec: 0 },
 		{ key: "img_4_d0d404bb.jpg", srcContains: "img_4_d0d404bb.jpg", layer: 'frame', expectedSec: 5 },
 	],
+	"triggersFlatRegion": [
+		{ key: "loader_871e2ff0.mp4", srcContains: "loader_871e2ff0.mp4", layer: 'page', expectedSec: 0, minOccurrences: 0 },
+		{ key: "video-test_465b7757.mp4", srcContains: "video-test_465b7757.mp4", layer: 'page', expectedSec: 0 },
+		{ key: "img_2_18b5d21f.jpg", srcContains: "img_2_18b5d21f.jpg", layer: 'frame', expectedSec: 5 },
+		{ key: "img_4_d0d404bb.jpg", srcContains: "img_4_d0d404bb.jpg", layer: 'frame', expectedSec: 5 },
+	],
 	"triggersKeyboard": [
 		{ key: "loader_871e2ff0.mp4", srcContains: "loader_871e2ff0.mp4", layer: 'page', expectedSec: 0, minOccurrences: 0 },
 		{ key: "video-test_465b7757.mp4", srcContains: "video-test_465b7757.mp4", layer: 'page', expectedSec: 0 },

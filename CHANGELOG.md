@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to
 [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+
+- fixed a trigger targeting a flat (non-nested) region getting stuck after its first play — `repeatCount`/`dur` completion failed to clear its internal "playing" state, so the same trigger silently did nothing on any later re-fire (keyboard, mouse/touch, widget, or sync). Triggers targeting nested sub-regions were unaffected
+
 ## [4.0.0] - 2026-07-29
 
 ### Added

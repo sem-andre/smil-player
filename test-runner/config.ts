@@ -96,6 +96,7 @@ export function getSmilUrls(port: number = 3000) {
 		conditionalTimePriority: `${base}/dynamic/conditionalTimePriority.smil`,
 		triggersWidget: `${base}/triggers/triggersWidget.smil`,
 		triggersStop: `${base}/triggers/triggersStop.smil`,
+		triggersFlatRegion: `${base}/triggers/triggersFlatRegion.smil`,
 		crossfadeTransition: `${base}/transitions/simpleCrossfade.smil`,
 		billboardTransition: `${base}/transitions/simpleBillboard.smil`,
 		defaultTransition: `${base}/transitions/defaultTransition.smil`,

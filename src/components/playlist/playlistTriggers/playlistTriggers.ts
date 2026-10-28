@@ -153,6 +153,14 @@ export class PlaylistTriggers extends PlaylistCommon implements IPlaylistTrigger
 				element.style.top = `${regionInfo.top}px`;
 				element.style.left = `${regionInfo.left}px`;
 			}
+		} else if (media.hasOwnProperty(SMILTriggersEnum.triggerValue)) {
+			// Flat (non-nested) target region: only one candidate region, so no
+			// free-slot search is needed. Without this, triggersEndless[id].regionInfo
+			// stays deleted after every (re)fire - processTriggerDuration /
+			// processTriggerRepeatCount then silently no-op at end-of-life and
+			// currentTrigger.play never resets to false, so the trigger can never
+			// be fired again.
+			set(this.triggersEndless, `${media.triggerValue}.regionInfo`, regionInfo);
 		}
 
 		return regionInfo;
